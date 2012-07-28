@@ -178,6 +178,10 @@ public class RAApplication extends Application {
 	}
 
 	// Error Logging
+	public void log ( String msg ) {
+		
+	}
+	
 	public void error ( int errorCodeIndex, Throwable t, String msg ) {
 		errorCode = Integer.parseInt( errorCodes[errorCodeIndex] );
 		Log.e( TAG, msg, t );
