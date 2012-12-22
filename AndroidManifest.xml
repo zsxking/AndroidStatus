@@ -123,6 +123,23 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/
             android:authorities="info.curtbinder.reefangel.db"
             android:readPermission="info.curtbinder.reefangel.permission.READ_PROVIDER" >
         </provider>
+        
+        <!-- Widgets -->
+        <!-- Each widget needs its own receiver -->
+        <receiver
+            android:name="info.curtbinder.reefangel.widget.PhoneBanner4x1_1"
+            android:label="@string/widgetPhoneBanner4x1_1" >
+            <!-- Each widget has a separate name -->
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="info.curtbinder.reefangel.service.UPDATE_DISPLAY_DATA" />
+            </intent-filter>
+
+            <!-- Each widget has a separate provider xml / layout -->
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetphonebanner4x1_1" />
+        </receiver>
     </application>
 
 </manifest>

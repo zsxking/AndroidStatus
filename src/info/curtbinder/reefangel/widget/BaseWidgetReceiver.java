@@ -13,16 +13,18 @@ import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import info.curtbinder.reefangel.service.MessageCommands;
 
 public class BaseWidgetReceiver extends AppWidgetProvider {
-	
+
 	public static final String TAG = BaseWidgetReceiver.class.getSimpleName();
+	public static final String URI_LATEST_STRING =
+			"content://info.curtbinder.reefangel.db/latest";
 
 	@Override
 	public void onReceive ( Context context, Intent intent ) {
-		if ( intent
-				.getAction()
-				.equals(	"info.curtbinder.reefangel.service.UPDATE_DISPLAY_DATA" ) ) {
+		if ( intent.getAction()
+				.equals( MessageCommands.UPDATE_DISPLAY_DATA_INTENT ) ) {
 			Log.d( TAG, "OnReceive Update Display Data" );
 		}
 		updateDisplay( context );

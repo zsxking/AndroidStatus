@@ -193,6 +193,13 @@ Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</stri
     <string name="statusParsing">Parsing</string>
     <string name="statusFinished">Finished</string>
 
+    <!-- Widget names -->
+    <string name="widgetPhoneBanner4x1_1">RA Banner Blue 4x1</string>
+    <string name="widgetPhoneHalfScreen4x2_1">RA Half Blue 4x2</string>
+    <string name="widgetPhoneHalfScreen4x2_2">RA Half Black 4x2</string>
+    <string name="widgetPhoneFullScreen4x4_1">RA Full Blue 4x4</string>
+    <string name="widgetPhoneFullScreen4x4_2">RA Full Green 4x4</string>
+    
     <!-- Settings / Preference Labels -->
     <string name="prefFirstRunKey">firstrun</string>
     <string name="prefsCategoryDevice">Device</string>
